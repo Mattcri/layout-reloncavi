@@ -1,0 +1,46 @@
+/*
+  Theme Name: Plaza Reloncaví
+  Theme URI: https://mtmdigital.cl
+  Author: Matías Criado
+  Description: Condominio Mapocho Now
+  License: 
+  License URI: 
+*/
+
+/*--------------------------------------------------------------*/
+/* # GENERAL
+--------------------------------------------------------------*/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  --color-principal: #fff;
+  --color-txt: #333;
+  --color-green: #4FAA07;
+  --bg-blue-grey: #27313B;
+}
+
+body {
+  color: var(--color-txt);
+  font-family: 'Roboto', sans-serif;
+  font-size: .98rem;
+}
+/* figure, picture {
+  margin: 0;
+  padding: 0;
+} */
+.height-main {
+  height: auto;
+  min-height: 100vh;
+}
+.height-section {
+  height: auto;
+  min-height: calc(100vh - 140px);
+}
+.bg-blue-grey {
+  background-color: var(--bg-blue-grey);
+}
+.txt-color-green {
+  color: var(--color-green);
+}
