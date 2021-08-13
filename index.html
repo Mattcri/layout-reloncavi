@@ -9,18 +9,43 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main class="height-main">
     <section class="container-fluid px-0">
       <div class="row mx-0 height-section">
-        <div class="col-md-4 bg-blue-grey">
-          <p>form</p>
+        <div class="col-lg-4 col-xl-3 px-0 h-100">
+          <div class="logo py-5 pb-lg-0 pt-4 px-4">
+            <img src="./img/logo-reloncavi.png" alt="Reloncaví" class="img-fluid">
+          </div>
+          <div class="content px-5 d-none d-lg-block">
+            <h3 class="text-uppercase text-center mb-3">Preventa<br>Exclusiva</h3>
+            <p>Completa tus datos y te enviaremos toda la información del proyecto</p>
+            <div class="wrap-form">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Nombre completo">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="RUT">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Teléfono">
+              </div>
+              <div class="form-group text-right">
+                <input type="submit" value="enviar" class="btn-submit text-uppercase">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8">
-          <p>imagen</p>
+        <div class="col-lg-8 col-xl-9 px-0 h-100">
+          <figure class="h-100">
+            <img src="./img/landing-img.jpg" alt="Plaza Reloncaví" class="img-fluid w-100 h-100 max-height-section">
+          </figure>
         </div>
       </div>
     </section>

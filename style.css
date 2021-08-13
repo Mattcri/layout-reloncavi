@@ -26,21 +26,62 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: .98rem;
 }
-/* figure, picture {
+figure {
   margin: 0;
   padding: 0;
-} */
+}
 .height-main {
   height: auto;
   min-height: 100vh;
 }
 .height-section {
   height: auto;
-  min-height: calc(100vh - 140px);
+  /* min-height: calc(100vh - 100px); */
 }
+/* .max-height-section {
+  max-height: calc(100vh - 100px);
+} */
 .bg-blue-grey {
   background-color: var(--bg-blue-grey);
 }
 .txt-color-green {
   color: var(--color-green);
+}
+.object-cover {
+  object-fit: cover;
+}
+.logo img {
+  width: 95%;
+  max-height: 95px;
+  object-fit: contain;
+}
+.content {
+  padding-top: 1.7rem;
+}
+.content h3 {
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+.btn-submit {
+  background-color: var(--color-green);
+  border: none;
+  color: var(--color-principal);
+  font-weight: 500;
+  padding: .27rem .7rem;
+  min-width: 135px;
+}
+.btn-submit:hover {
+  background-color: #418a07;
+  transition: all .4s ease-in;
+}
+
+/*--------------------------------------------------------------*/
+/* # RESPONSIVE
+--------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+  .height-section {
+    height: calc(100vh - 100px);
+    max-height: 700px;
+    /* min-height: calc(100vh - 100px); */
+  }
 }
