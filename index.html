@@ -7,9 +7,12 @@
   <title>Reloncaví</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
+    integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -17,7 +20,7 @@
     <section class="container-fluid px-0">
       <div class="row mx-0 height-section">
         <div class="col-lg-4 col-xl-3 px-0 h-100">
-          <div class="logo py-5 pb-lg-0 pt-4 px-4">
+          <div class="logo py-4 pb-lg-0 pt-4 px-4">
             <img src="./img/logo-reloncavi.png" alt="Reloncaví" class="img-fluid">
           </div>
           <div class="content px-5 d-none d-lg-block">
@@ -25,43 +28,147 @@
             <p>Completa tus datos y te enviaremos toda la información del proyecto</p>
             <div class="wrap-form">
               <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="Nombre completo">
+                <input type="text" class="form-control rounded-0" placeholder="Nombre completo">
               </div>
               <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="RUT">
+                <input type="text" class="form-control rounded-0" placeholder="RUT">
               </div>
               <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="E-mail">
+                <input type="text" class="form-control rounded-0" placeholder="E-mail">
               </div>
               <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="Teléfono">
+                <input type="text" class="form-control rounded-0" placeholder="Teléfono">
               </div>
               <div class="form-group text-right">
                 <input type="submit" value="enviar" class="btn-submit text-uppercase">
               </div>
-            </div>
+            </div> <!-- wrap-form -->
+            
           </div>
         </div>
         <div class="col-lg-8 col-xl-9 px-0 h-100">
           <figure class="h-100">
-            <img src="./img/landing-img.jpg" alt="Plaza Reloncaví" class="img-fluid w-100 h-100 max-height-section">
+            <img src="./img/landing-img.jpg" alt="Plaza Reloncaví" class="img-fluid w-100 h-100 object-cover object-cover-xl-none">
           </figure>
         </div>
       </div>
     </section>
-    <div class="row mx-0">
-      <div class="col-3">
-        <h1>hola</h1>
+    <section class="row mx-0 txt-color-white bg-blue-grey ">
+      <div class="col-4 col-lg-3 px-0 mb-4 mb-lg-0 position-relative">
+        <div class="details bg-green px-2">
+          <div class="details__header after">
+            <h6 class="text-uppercase my-0">4 torres</h6>
+            <p class="my-0">1 &#8226 2 &#8226 3</p>
+            <h5 class="text-uppercase my-0">dorms</h5>
+          </div>
+          <div class="details__bottom pt-3">
+            <p class="my-0">1 &#8226 2</p>
+            <h5 class="text-uppercase my-0">baños</h5>
+          </div>
+        </div>
       </div>
-      <div class="col-3">
-        <h1>hola</h1>
+      <div class="col-8 col-lg-4 mb-4 mb-lg-0 abstract px-2 px-lg-5">
+        <h1 class="text-uppercase font-weight-bold my-0 d-lg-none"><strong class="txt-color-green">Gran vista</strong> Bahía de Puerto Montt</h1>
+        <h1 class="text-uppercase font-weight-bold my-0 d-none d-lg-block"><strong class="txt-color-green">Gran vista</strong> Bahía<br>de Puerto Montt</h1>
+        <p class="my-0">Barrio exclusivo y residencial.</p>
+        <p class="my-0">Gran plusvalía y conectividad.</p>
       </div>
-      <div class="col-3">
-        <h1>hola</h1>
+      <div class="col-12 py-3 d-lg-none position-relative before">
+        <h4 class="text-uppercase text-center my-0">Desde uf 2.200</h4>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="features-desktop row mx-0">
+          <div class="col-4 px-2 mb-3 d-flex align-items-center">
+            <img src="./img/plaza-central.png" alt="plaza central">
+            <p class="my-0">Plaza central</p>
+          </div>
+          <div class="col-4 px-2 mb-3 d-flex align-items-center">
+            <img src="./img/areas-verdes.png" alt="areas verdes">
+            <p class="my-0">Áreas verdes</p>
+          </div>
+          <div class="col-4 px-2 mb-3 d-flex align-items-center">
+            <img src="./img/cowork.png" alt="cowork">
+            <p class="my-0">Sala Cowork</p>
+          </div>
+          <div class="col-4 px-2 d-flex align-items-center">
+            <img src="./img/fitness.png" alt="Sala Fitness">
+            <p class="my-0">Sala Fitness</p>
+          </div>
+          <div class="col-4 px-2 d-flex align-items-center">
+            <img src="./img/lavanderia.png" alt="Lavandería">
+            <p class="my-0">Lavandería</p>
+          </div>
+          <div class="col-4 px-2 d-flex align-items-center">
+            <img src="./img/quincho.png" alt="Quincho">
+            <p class="my-0">Quincho</p>
+          </div>
+        </div> <!-- features-desktop -->
+      </div>
+    </section>
+    <div class="form-mobile d-lg-none">
+      <h3 class="text-uppercase font-weight-bold text-center mb-3">Preventa<br>Exclusiva</h3>
+      <p>Completa tus datos y te enviaremos toda la información del proyecto</p>
+      <div class="wrap-form">
+        <div class="form-group mb-3">
+          <input type="text" class="form-control rounded-0" placeholder="Nombre completo">
+        </div>
+        <div class="form-group mb-3">
+          <input type="text" class="form-control rounded-0" placeholder="RUT">
+        </div>
+        <div class="form-group mb-3">
+          <input type="text" class="form-control rounded-0" placeholder="E-mail">
+        </div>
+        <div class="form-group mb-3">
+          <input type="text" class="form-control rounded-0" placeholder="Teléfono">
+        </div>
+        <div class="form-group text-right">
+          <input type="submit" value="enviar" class="btn-submit text-uppercase">
+        </div>
+        <div class="col-12 text-center">
+          <p class="mb-1">+56 652 480 884</p>
+          <p class="mb-0">Vía Azul 940, Sector Reloncaví, Puerto Montt</p>
+        </div>
       </div>
     </div>
-
+    <div class="features-mobile txt-color-white bg-blue-grey row mx-0 px-1 d-lg-none">
+      <div class="col-4 px-2 mb-3 d-flex align-items-center">
+        <img src="./img/plaza-central.png" alt="plaza central">
+        <p class="my-0">Plaza central</p>
+      </div>
+      <div class="col-4 px-2 mb-3 d-flex align-items-center">
+        <img src="./img/areas-verdes.png" alt="areas verdes">
+        <p class="my-0">Áreas verdes</p>
+      </div>
+      <div class="col-4 px-2 mb-3 d-flex align-items-center">
+        <img src="./img/cowork.png" alt="cowork">
+        <p class="my-0">Sala Cowork</p>
+      </div>
+      <div class="col-4 px-2 d-flex align-items-center">
+        <img src="./img/fitness.png" alt="Sala Fitness">
+        <p class="my-0">Sala Fitness</p>
+      </div>
+      <div class="col-4 px-2 d-flex align-items-center">
+        <img src="./img/lavanderia.png" alt="Lavandería">
+        <p class="my-0">Lavandería</p>
+      </div>
+      <div class="col-4 px-2 d-flex align-items-center">
+        <img src="./img/quincho.png" alt="Quincho">
+        <p class="my-0">Quincho</p>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <div class="brand text-center">
+      <a href="#">
+        <img src="./img/easur-web.png" alt="easur-web" >
+      </a>
+    </div>
+    <div class="copy-rigth py-3 px-3 text-center">
+      <p class="my-0">Las imágenes exhibidas en el sitio son de carácter ilustrativo, referencial, y no constituyen necesariamente una representación exacta de la realidad ni definen el producto final.</p>
+    </div>
+
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
