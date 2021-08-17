@@ -111,7 +111,7 @@ figure {
 }
 .after::after {
   content: "";
-  background-color: #fff;
+  background-color: var(--color-principal);
   height: 1.5px;
   width: 82%;
   position: absolute;
@@ -121,13 +121,30 @@ figure {
 }
 .before::before {
   content: "";
-  background-color: #fff;
+  background-color: var(--color-principal);
   height: 1.5px;
   width: 82%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+.before-right::before {
+  content: "";
+  background-color: var(--color-principal);
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact p {
+  font-size: .9rem;
+}
+.contact p i {
+  font-size: 1rem;
+  margin-right: .65rem;
 }
 .abstract {
   padding: 1.15rem 0 .9rem;
@@ -155,7 +172,7 @@ figure {
   line-height: 1.1;
 }
 .features-desktop {
-  padding: 1.15rem 0 .9rem;
+  padding: .85rem 0 .9rem;
 }
 .features-desktop p {
   margin-left: .7rem;
@@ -190,6 +207,13 @@ footer .brand {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .form-mobile {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .height-section {
     height: calc(100vh + 100px);
@@ -202,10 +226,64 @@ footer .brand {
   .abstract p {
     font-size: 1.3rem;
   }
+  .details {
+    right: 7%;
+    left: 30%;
+    max-width: 175px;
+  }
+  .details h6 {
+    font-size: 1.35rem;
+  }
+  .details p {
+    font-size: 1.65rem;
+  }
+  .details h5 {
+    font-size: 1.7rem;
+  }
+  footer .brand {
+    padding: .5rem 0;
+  }
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1200px) {
+  .abstract h1 {
+    letter-spacing: 2.5px;
+  }
+  .abstract p {
+    letter-spacing: 1.5px;
+  }
+  .before-right::before {
+    right: 6%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
   .height-section {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 55px);
+  }
+  .before-right::before {
+    right: 7%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .details {
+    right: 0;
+    left: 37%;
+    padding: 1.6rem 0;
+  }
+  .abstract h1 {
+    font-size: 2.5rem;
+    
+  }
+  .abstract p {
+    font-size: 1.55rem;
+    letter-spacing: 2px;
+  }
+  .uf {
+    font-size: 2rem;
+  }
+  .features-desktop p {
+    font-size: 1.2rem;
   }
 }
