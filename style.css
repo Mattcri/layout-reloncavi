@@ -17,6 +17,7 @@
 :root {
   --color-principal: #fff;
   --color-txt: #333;
+  --color-txt-gray: #E2E2E2;
   --color-green: #4FAA07;
   --bg-blue-grey: #27313B;
 }
@@ -53,12 +54,15 @@ figure {
 .txt-color-white {
   color: var(--color-principal);
 }
+.txt-color-gray {
+  color: var(--color-txt-gray);
+}
 .object-cover {
   object-fit: cover;
 }
 .logo img {
   width: 95%;
-  max-height: 95px;
+  max-height: 80px;
   object-fit: contain;
 }
 .content {
@@ -129,16 +133,7 @@ figure {
   left: 50%;
   transform: translateX(-50%);
 }
-.before-right::before {
-  content: "";
-  background-color: var(--color-principal);
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
-}
+
 .contact p {
   font-size: .9rem;
 }
@@ -176,6 +171,23 @@ figure {
 }
 .features-desktop p {
   margin-left: .7rem;
+}
+.wrap-form .wpcf7 input[type="submit"] {
+  order: 2;
+}
+.wrap-form .wpcf7 .ajax-loader {
+  order: 1;
+}
+.closePosicion {
+  right: -15px;
+  top: -15px;
+}
+.closePosicion > button {
+  background-color: var(--bg-blue-grey) !important;
+  border-radius: 0 0 0 10px;
+  padding: .8rem 1rem;
+  opacity: 1;
+  z-index: 10;
 }
 footer .brand {
   border-bottom: 2px solid #DADDDE;
@@ -216,8 +228,8 @@ footer .brand {
 
 @media only screen and (min-width: 992px) {
   .height-section {
-    height: calc(100vh + 100px);
-    max-height: 700px;
+    height: calc(100vh + 70px);
+    max-height: 800px;
     /* min-height: calc(100vh - 100px); */
   }
   .abstract h1 {
@@ -232,13 +244,23 @@ footer .brand {
     max-width: 175px;
   }
   .details h6 {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
   .details p {
-    font-size: 1.65rem;
+    font-size: 2rem;
   }
   .details h5 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+  }
+  .before-right::before {
+    content: "";
+    background-color: var(--color-principal);
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
   }
   footer .brand {
     padding: .5rem 0;
@@ -258,11 +280,23 @@ footer .brand {
 }
 
 @media only screen and (min-width: 1300px) {
-  .height-section {
+  /* .height-section {
     height: calc(100vh - 55px);
-  }
+  } */
   .before-right::before {
     right: 7%;
+  }
+}
+
+@media (min-width: 1200px) and (max-height: 700px) {
+  .height-section {
+    height: calc(100vh + 100px);
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 700px) {
+  .height-section {
+    height: calc(100vh - 55px);
   }
 }
 
