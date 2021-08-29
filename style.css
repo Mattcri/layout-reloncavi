@@ -294,7 +294,7 @@ footer .brand {
   }
 }
 
-@media (min-width: 1200px) and (min-height: 700px) {
+@media (min-width: 1200px) and (min-height: 701px) {
   .height-section {
     height: calc(100vh - 55px);
   }
